@@ -53,7 +53,11 @@ __FBSDID("$FreeBSD$");
 #include <arm/ti/ti_scm.h>
 
 #include "am335x_pwm.h"
+#ifndef __rtems__
 #include "am335x_scm.h"
+#else /* __rtems__ */
+#include <arm/ti/am335x/am335x_scm.h>
+#endif /* __rtems__ */
 
 #define	PWMSS_IDVER		0x00
 #define	PWMSS_SYSCONFIG		0x04

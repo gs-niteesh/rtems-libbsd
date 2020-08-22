@@ -5018,7 +5018,6 @@
 #define	tc_tick_sbt _bsd_tc_tick_sbt
 #define	t_functions _bsd_t_functions
 #define	t_functions_inited _bsd_t_functions_inited
-#define	ti_am335x_clk_devmap _bsd_ti_am335x_clk_devmap
 #define	tick _bsd_tick
 #define	ticket_altqs_active _bsd_ticket_altqs_active
 #define	ticket_altqs_inactive _bsd_ticket_altqs_inactive
@@ -5033,14 +5032,6 @@
 #define	_timeout_task_init _bsd__timeout_task_init
 #define	timevaladd _bsd_timevaladd
 #define	timevalsub _bsd_timevalsub
-#define	ti_prcm_clk_disable _bsd_ti_prcm_clk_disable
-#define	ti_prcm_clk_enable _bsd_ti_prcm_clk_enable
-#define	ti_prcm_clk_get_source_freq _bsd_ti_prcm_clk_get_source_freq
-#define	ti_prcm_clk_set_source _bsd_ti_prcm_clk_set_source
-#define	ti_prcm_clk_set_source_freq _bsd_ti_prcm_clk_set_source_freq
-#define	ti_prcm_clk_valid _bsd_ti_prcm_clk_valid
-#define	ti_scm_reg_read_4 _bsd_ti_scm_reg_read_4
-#define	ti_scm_reg_write_4 _bsd_ti_scm_reg_write_4
 #define	trash_ctor _bsd_trash_ctor
 #define	trash_dtor _bsd_trash_dtor
 #define	trash_fini _bsd_trash_fini

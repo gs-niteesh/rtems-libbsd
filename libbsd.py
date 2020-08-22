@@ -663,8 +663,6 @@ class mmc_ti(builder.Module):
         mm = self.manager
         self.addKernelSpaceHeaderFiles(
             [
-                'sys/arm/ti/ti_cpuid.h',
-                'sys/arm/ti/ti_prcm.h',
                 'sys/arm/ti/ti_hwmods.h',
                 'sys/dev/sdhci/sdhci.h',
                 'sys/dev/sdhci/sdhci_fdt_gpio.h',
@@ -1147,11 +1145,7 @@ class dev_usb_controller_bbb(builder.Module):
         self.addDependency(mm['dev_usb'])
         self.addKernelSpaceHeaderFiles(
             [
-                'sys/arm/ti/ti_cpuid.h',
-                'sys/arm/ti/ti_prcm.h',
-                'sys/arm/ti/ti_scm.h',
                 'sys/arm/ti/tivar.h',
-                'sys/arm/ti/am335x/am335x_scm.h',
                 'sys/dev/usb/controller/musb_otg.h',
                 'sys/sys/timeet.h',
                 'sys/sys/watchdog.h',
@@ -1161,10 +1155,7 @@ class dev_usb_controller_bbb(builder.Module):
         )
         self.addKernelSpaceSourceFiles(
             [
-                'sys/arm/ti/ti_scm.c',
-                'sys/arm/ti/am335x/am335x_prcm.c',
                 'sys/arm/ti/am335x/am335x_usbss.c',
-                'sys/arm/ti/ti_prcm.c',
                 'sys/arm/ti/am335x/am335x_musb.c',
                 'sys/dev/usb/controller/musb_otg.c',
             ],
